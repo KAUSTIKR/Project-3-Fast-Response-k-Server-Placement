@@ -7,6 +7,6 @@ The experimental and theoretical graphs, when plotted, show the same pattern, wh
 Program solves the k-server placement problem using dynamic programming. 
 The goal is to place k servers across n clients to minimize the total traffic cost, where traffic cost is the sum of traffic weights multiplied by their distances from the nearest server.
 The program uses a greedy method to find the optimal location for a single server (weighted median).
-A **3D dynamic programming (DP) table ** is used to store intermediate results and avoid redundant computations. It recursively fills the DP table by splitting the clients between different servers and tracking the optimal split points.
+A **3D dynamic programming (DP) table** is used to store intermediate results and avoid redundant computations. It recursively fills the DP table by splitting the clients between different servers and tracking the optimal split points.
 After calculating the minimum cost using minTrafficCost(), the program retrieves the optimal server locations using the split points. It also generates random weights for clients, measures execution time, and prints the result. 
 The main logic efficiently handles the problem in **O(n²k)** time complexity.
